@@ -28,7 +28,7 @@ GitHub's build doesn't need it.
 
 ## Deploying
 
-Served at **https://blog.thenihoniumfiles.com** (set by the `CNAME` file and `url` in `_config.yml`).
+Served at **https://blog.nihonium.dev** (set by the `CNAME` file and `url` in `_config.yml`).
 
 1. Push to `main`, then in the repo go to **Settings → Pages** and choose **Deploy from a branch → `main` / root**.
    The custom domain field should fill in from `CNAME`.
