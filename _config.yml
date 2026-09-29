@@ -1,0 +1,42 @@
+title: The Nihonium Files
+description: A rather odd blog
+author: Nihal Gulati
+email: nihalsgulati@gmail.com
+tagline: >-
+  Welcome to The Nihonium Files, a blog where I, Nihal Gulati, a totally unqualified
+  high-schooler, spew words about coding and writing and everything in between. I hope
+  whatever lucky soul is reading this will enjoy my random thoughts.
+
+url: "https://blog.thenihoniumfiles.com"
+baseurl: ""
+
+timezone: America/Los_Angeles
+permalink: /post/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+feed:
+  path: blog-feed.xml
+
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Recent Octagon Stories
+    url: /octagon/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - tools

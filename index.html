@@ -1,0 +1,26 @@
+---
+layout: default
+redirect_from:
+  - /home/
+  - /blog/
+---
+<section class="hero">
+  <h1 class="site-title">{{ site.title | upcase }}</h1>
+  <p class="tagline">{{ site.tagline }}</p>
+</section>
+
+<section class="post-list">
+  <h2 class="list-heading">All Posts</h2>
+  {% for post in site.posts %}
+    <a class="post-card{% if post.image %} has-image{% endif %}" href="{{ post.url | relative_url }}">
+      {% if post.image %}
+        <div class="card-image" style="background-image: url('{{ post.image | relative_url }}')"></div>
+      {% endif %}
+      <div class="card-body">
+        {% include post-meta.html post=post %}
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html }}</p>
+      </div>
+    </a>
+  {% endfor %}
+</section>
